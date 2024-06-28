@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RagSol", "RagSol", "{561D769F-F6D5-47E6-8E06-D38C1231664C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "RagSol\BlazorApp\BlazorApp.csproj", "{460FFBE1-0F4F-41B0-9630-55E2D24827AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{460FFBE1-0F4F-41B0-9630-55E2D24827AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460FFBE1-0F4F-41B0-9630-55E2D24827AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460FFBE1-0F4F-41B0-9630-55E2D24827AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460FFBE1-0F4F-41B0-9630-55E2D24827AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{460FFBE1-0F4F-41B0-9630-55E2D24827AB} = {561D769F-F6D5-47E6-8E06-D38C1231664C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34F9265A-707B-4DC6-B8FD-E50870CC6450}
+	EndGlobalSection
+EndGlobal

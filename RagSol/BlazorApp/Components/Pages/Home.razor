@@ -1,0 +1,33 @@
+﻿@page "/"
+@inject HttpClient Http
+@using System.Text.Json
+
+<pageTitle>Home</PageTitle>
+
+<input type="text" @bind="userInput" placeholder="Type your quesiton" />
+<button @onclick="SendToApi">Ask</button>
+
+@if (!string.IsNullOrEmpty(apiResponse))
+{
+    <p>@apiResponse</p>
+}
+
+@code {
+    private string userInput = "";
+    private string apiResponse = "";
+
+    private async Task SendToApi()
+    {
+        var requestContent = new StringContent(JsonSerializer.Serialize(new { query = userInput }));
+        var response = await Http.PostAsync("http://0.0.0.0:8080/ai", requestContent);
+        if (response.IsSuccessStatusCode)
+        {
+            var responseContent = await response.Content.ReadAsStringAsync();
+            apiResponse = responseContent;
+        }
+        else
+        {
+            apiResponse = "Error calling API";
+        }
+    }
+}
